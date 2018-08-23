@@ -14,7 +14,7 @@
         body
         {
             font-family: "Lucida Console", Monaco, monospace;
-            background-color: #fefefe;
+            background-color: #fbfbfb;
         }
 
         .body
@@ -41,7 +41,7 @@
         {
             border-style: solid;
             border-color: #cccccc;
-            border-width: 1px;
+            border-width: 2px;
             padding: 50px;
             margin-top: 15px;
             margin-bottom: 15px;
@@ -54,7 +54,7 @@
         {
             border-style: solid;
             border-color: #cccccc;
-            border-width: 1px;
+            border-width: 2px;
             padding: 20px;
             margin-top: 15px;
             margin-bottom: 15px;
@@ -64,6 +64,7 @@
 
         .box
         {
+            font-weight: bold;
             border-style: solid;
             border-color: #cccccc;
             border-width: .5px;
@@ -81,6 +82,12 @@
             padding: 10px;
             margin-bottom: 10px;
         }
+
+        .color
+        {
+            color: #14489b;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -88,61 +95,103 @@
         <div class="title">
             Battle API
         </div>
+
+        <!--What is this-->
+
         <div class="box"><p>What is this?</p></div>
         <p>
             A read-only API for cataloging battle stuff.
         </p>
+
         <div class="box"><p>Endpoints</p></div>
+
+        <!--battler-->
+
         <div class="box"><p>GET: /battler/:artist/:league</p></div>
         <p>
-            Description:<br>
-            Returns information for a given battler based on the
+            <div class="color">Description:</div>
+            Returns information for a given artist based on the
             league parameter.
         </p>
         <p>
-            Data:<br>
-
+            <div class="color">Data:</div>
+            {"battles": [{"video_id", "likes", "dislikes", "comments", "views",
+            "description", "partners": [...], "published", "opponents":
+            [...]}, ...], "info": {...}, "leagues": [...]}
         </p>
         <p>
-            Example:<br>
-            https://battleapi.herokapp.com/battler/dizaster/drect
+            <div class="color">Example:</div>
+            https://battleapi.herokuapp.com/battler/loaded%20lux/all
         </p>
+
+        <!--battlers-->
+
         <div class="box"><p>GET: /battlers/:league</p></div>
         <p>
-            Description:<br>
-            Returns list of battlers for a league.
-            league parameter.
+            <div class="color">Description:</div>
+            Returns list of artists for a specific league.
         </p>
         <p>
-            Data:<br>
-
+            <div class="color">Data:</div>
+            [{"battler", "battle_count", "views", "comments", "likes",
+            "dislikes", "comments_per_battle", "views_per_battle",
+            "likes_percentage", "view_percentage", "recent"}, ...]
         </p>
+        <p>
+            <div class="color">Example:</div>
+            https://battleapi.herokuapp.com/battlers/theurltv
+        </p>
+
+        <!--battle-->
+
         <div class="box"><p>GET: /battle/:id</p></div>
         <p>
-            Description:<br>
-            Returns information for a specific battle based on its YouTube ID.
+            <div class="color">Description:</div>
+            Returns information for a battle based on its YouTube ID.
         </p>
         <p>
-            Data:<br>
-
+            <div class="color">Data:</div>
+            {"info": {"video_id", "battlers", "views", "likes", "dislikes",
+            "description", "published", "channel", "likes_percentage"}},
+            "historical": [{...}, ...]}
         </p>
+        <p>
+            <div class="color">Example:</div>
+            https://battleapi.herokuapp.com/battle/6sJIvDq4UnQ
+        </p>
+
+        <!--battles-->
+
         <div class="box"><p>GET: /battles/:league</p></div>
         <p>
-            Description:<br>
+            <div class="color">Description:</div>
             Returns battles for a league.
         </p>
         <p>
-            Data:<br>
-
+            <div class="color">Data:</div>
+            {"info": {"video_id", "battlers", "views", "likes", "dislikes",
+            "description", "published", "channel", "likes_percentage"}},
+            "historical": [{...}, ...]}
         </p>
+        <p>
+            <div class="color">Example:</div>
+            https://battleapi.herokuapp.com/battles/dontflop
+        </p>
+
+        <!--leagues-->
+
         <div class="box"><p>GET: /leagues</p></div>
         <p>
-            Description:<br>
+            <div class="color">Description:</div>
             Returns league information.
         </p>
         <p>
-            Data:<br>
-
+            <div class="color">Data:</div>
+            [{"short", "league", "views", "channel"}, ...]
+        </p>
+        <p>
+            <div class="color">Example:</div>
+            https://battleapi.herokuapp.com/leagues
         </p>
         <div class="footer">
             Battle API
