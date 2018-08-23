@@ -41,20 +41,30 @@
         {
             border-style: solid;
             border-color: #cccccc;
-            border-width: 2px;
+            border-width: 1.5px;
             padding: 50px;
             margin-top: 15px;
             margin-bottom: 15px;
-            font-size: 40px;
-            text-align: center;
             background-color: #fefefes;
+            text-align: center;
+        }
+
+        .titletxt
+        {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .subtxt
+        {
+            font-size: 20px;
         }
 
         .footer
         {
             border-style: solid;
             border-color: #cccccc;
-            border-width: 2px;
+            border-width: 1.5px;
             padding: 20px;
             margin-top: 15px;
             margin-bottom: 15px;
@@ -93,15 +103,13 @@
 <body>
     <div class="body">
         <div class="title">
-            Battle API
+            <div class="titletxt">
+                Battle API
+            </div>
+            <div class="subtxt">
+                A read-only API for cataloging battle rap stuff.
+            </div>
         </div>
-
-        <!--What is this-->
-
-        <div class="box"><p>What is this?</p></div>
-        <p>
-            A read-only API for cataloging battle stuff.
-        </p>
 
         <div class="box"><p>Endpoints</p></div>
 
@@ -192,6 +200,15 @@
             <div class="color">Example:</div>
             https://battleapi.herokuapp.com/leagues
         </p>
+
+        <!--support-->
+
+        <div class="box"><p>Support</p></div>
+        <p>
+            If you appreciate this service, please consider supporting the
+            artists and leagues by purchasing their event streams.
+        </p>
+
         <div class="footer">
             Battle API
         </div>
