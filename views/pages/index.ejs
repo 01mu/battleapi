@@ -13,9 +13,8 @@
 
         body
         {
-            color: #e0e0e0;
-            font-family: Verdana, Geneva, sans-serif;
-            background-color: #343438;
+            font-family: "Lucida Console", Monaco, monospace;
+            background-color: #fefefe;
         }
 
         .body
@@ -27,26 +26,60 @@
         .box-w
         {
             border-style: solid;
-            border-color: #000000;
-            border-width: 1px;
+            border-color: #cccccc;
+            border-width: 0px;
             padding: 15px;
             margin-top: 15px;
             margin-bottom: 15px;
             font-size: 15px;
             text-align: left;
+            background-color: #fefefe;
+            color: #000000;
         }
 
         .title
         {
             border-style: solid;
-            border-color: #000000;
+            border-color: #cccccc;
             border-width: 1px;
-            padding: 60px;
+            padding: 40px;
             margin-top: 15px;
             margin-bottom: 15px;
             font-size: 40px;
             text-align: center;
-            background-color: #4a4a4c;
+            background-color: #fefefes;
+        }
+
+        .footer
+        {
+            border-style: solid;
+            border-color: #cccccc;
+            border-width: 1px;
+            padding: 20px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            text-align: center;
+            background-color: #fefefes;
+        }
+
+        .box
+        {
+            border-style: solid;
+            border-color: #cccccc;
+            border-width: .5px;
+            background-color: #f2f2f2;
+            padding-left: 10px;
+            margin-bottom: 10px;
+        }
+
+        .desc
+        {
+            border-style: solid;
+            border-color: #cccccc;
+            border-width: .5px;
+            background-color: #fefefe;
+            padding: 10px;
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -55,8 +88,64 @@
         <div class="title">
             Battle API
         </div>
-        <div class="box-w">
+        <div class="box"><p>What is this?</p></div>
+        <p>
+            A read-only API for cataloging battle stuff.
+        </p>
+        <div class="box"><p>Endpoints</p></div>
+        <div class="box"><p>GET: /battler/:artist/:league</p></div>
+        <p>
+            Description:<br>
+            Returns information for a given battler based on the
+            league parameter.
+        </p>
+        <p>
+            Data:<br>
 
+        </p>
+        <p>
+            Example:<br>
+            https://battleapi.herokapp.com/battler/dizaster/drect
+        </p>
+        <div class="box"><p>GET: /battlers/:league</p></div>
+        <p>
+            Description:<br>
+            Returns list of battlers for a league.
+            league parameter.
+        </p>
+        <p>
+            Data:<br>
+
+        </p>
+        <div class="box"><p>GET: /battle/:id</p></div>
+        <p>
+            Description:<br>
+            Returns information for a specific battle based on its YouTube ID.
+        </p>
+        <p>
+            Data:<br>
+
+        </p>
+        <div class="box"><p>GET: /battles/:league</p></div>
+        <p>
+            Description:<br>
+            Returns battles for a league.
+        </p>
+        <p>
+            Data:<br>
+
+        </p>
+        <div class="box"><p>GET: /leagues</p></div>
+        <p>
+            Description:<br>
+            Returns league information.
+        </p>
+        <p>
+            Data:<br>
+
+        </p>
+        <div class="footer">
+            Battle API
         </div>
     </div>
 </body>
