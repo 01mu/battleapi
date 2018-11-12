@@ -1,27 +1,94 @@
-.jumbotron {
-  background: #532F8C;
-  color: white;
-  padding-bottom: 80px; }
-  .jumbotron .btn-primary {
-    background: #845ac7;
-    border-color: #845ac7; }
-    .jumbotron .btn-primary:hover {
-      background: #7646c1; }
-  .jumbotron p {
-    color: #d9ccee;
-    max-width: 75%;
-    margin: 1em auto 2em; }
-  .navbar + .jumbotron {
-    margin-top: -20px; }
-  .jumbotron .lang-logo {
-    display: block;
-    background: #B01302;
-    border-radius: 50%;
-    overflow: hidden;
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    border: 2px solid white; }
-    .jumbotron .lang-logo img {
-      max-width: 100%; }
+hr
+{
+    background-color: #000000;
+    border: 0 none;
+    height: .5px;
+}
 
+body
+{
+    font-family: "Lucida Console", Monaco, monospace;
+    background-color: #fbfbfb;
+}
+
+.body
+{
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.box-w
+{
+    border-style: solid;
+    border-color: #cccccc;
+    border-width: 0px;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    text-align: left;
+    background-color: #fefefe;
+    color: #000000;
+}
+
+.title
+{
+    border-style: solid;
+    border-color: #cccccc;
+    border-width: 1.5px;
+    padding: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #fefefes;
+    text-align: center;
+}
+
+.titletxt
+{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.subtxt
+{
+    font-size: 20px;
+}
+
+.footer
+{
+    border-style: solid;
+    border-color: #cccccc;
+    border-width: 1.5px;
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    background-color: #fefefes;
+}
+
+.box
+{
+    font-weight: bold;
+    border-style: solid;
+    border-color: #cccccc;
+    border-width: .5px;
+    background-color: #f2f2f2;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.desc
+{
+    border-style: solid;
+    border-color: #cccccc;
+    border-width: .5px;
+    background-color: #fefefe;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.color
+{
+    color: #14489b;
+    font-weight: bold;
+}
